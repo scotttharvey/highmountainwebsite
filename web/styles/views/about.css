@@ -1,0 +1,15 @@
+.about-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    text-align: center;
+    background: url('../../img/background.jpg');
+    height: 240px
+}
+
+.about-image img {
+    width: 100%;
+    height:100%;
+    justify-content: center;
+}

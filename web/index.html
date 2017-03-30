@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeFinder">
+<head>
+    <title>Highmountain</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Pokemon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/base/reset.css">
+
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+
+    <link rel="stylesheet" href="styles/views/main.css">
+    <link rel="stylesheet" href="styles/views/about.css">
+
+
+
+</head>
+
+<body>
+<main role="main">
+  <div id="header">
+      <div>
+        <div id="logo">
+          <a href="index.html"><img src="img/logo.png" alt="LOGO" width="350" height="98"></a>
+        </div>
+        <ul id="navigation">
+          <li class="selected">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+                  <li>
+            <a href="ownership.html">Ownership</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div id="footer">
+		<div>
+			<div id="links">
+				<div class="showroom">
+				  <h4>Contact</h4>
+					<p>
+						High Mountain Home Inspections<br>
+						Ogden, Utah 84404<br>801-699-7485<br> <a href="mailto:highmountainhomes@gmail.com">highmountainhomes@gmail.com</a>
+				  </p>
+				</div>
+				<div>
+					<h4>Certifications</h4>
+					<ul class="posts">
+						<li>
+
+							<p>
+								<img src="images/internachi.png" alt="Img">
+							</p>
+						</li>
+												<li>
+
+						</li>
+					</ul>
+				</div>
+				<div>
+
+					<div id="connect">
+						<h4>Social Media</h4>
+						<a href="https://www.facebook.com/HighMountainHomeInspections" target="_blank" class="facebook"></a><a href="http://www.twitter.com" target="_blank" class="twitter"></a>
+					</div>
+                    <div style="margin-top: 5px;" id="showroom">
+						<h4>Discounts</h4>
+						<p style="margin-top: -7px; margin-left: 10px; font-size: 14px;"><a href="images/militarydiscount.jpg" target="_blank">Military Discount Coupon CLICK HERE</a></p>
+					</div>
+				</div>
+			</div>
+			<ul class="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+                <li>
+					<a href="ownership.html">Ownership</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<p id="footnote">
+				© Copyright 2014. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+
+
+
+
+
+    <ui-view></ui-view>
+
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+<script src="./js/app.js"></script>
+
+
+
+
+
+
+</body>
+</html>
