@@ -1,43 +1,27 @@
-angular.module('pokeFinder', ['ui.router'])
+angular.module('highmountain', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('home',{
-                url:'/',
+                url:'/home',
                 templateUrl: "../views/home.html"
             })
-            .state('pokemon',{
-                url:'/pokemon',
-                parent:'home',
-                templateUrl: "../views/about-pokemon.html"
+            .state('about',{
+                url:'/about',
+                templateUrl: "../views/about.html"
+            })
+            .state('services',{
+                url:'/services',
+                templateUrl: "../views/services.html"
+            })
+            .state('ownership',{
+                url:'/ownership',
+                templateUrl: "../views/ownership.html",
             })
             .state('contact',{
                 url:'/contact',
-                parent:'home',
-                templateUrl: "../views/contact.html"
-            })
-            .state('starters',{
-                url:'/starters',
-                templateUrl: "../views/starters.html",
-                controller: 'startersCtrl',
-                controllerAs: 'vm'
-            })
-            .state('caught',{
-                url:'/caught/:id',
-                templateUrl: "../views/caught.html",
-                controller: 'caughtCtrl',
-                controllerAs: 'vm'
-            })
-            .state('routes',{
-                url:'/routes',
-                templateUrl: "../views/pokemon-routes.html",
-                controller: 'routesCtrl',
-                controllerAs: 'vm'
-            })
-            .state('types',{
-                url:'/types',
-                templateUrl: "../views/types.html",
-              });
+                templateUrl: "../views/contact.html",
+            });
 
         $urlRouterProvider
-            .otherwise('/');
+            .otherwise('/home');
     });
